@@ -9,25 +9,19 @@
 }
 
 html {
-	background: linear-gradient(
-			0deg,
-			rgba(19, 19, 19, 0.29),
-			rgba(19, 19, 19, 0.29)
-		),
-		linear-gradient(112.68deg, #180247 0%, #010004 100%);
 	overflow: hidden;
 }
 body {
 	height: 100vh;
 	margin: 0px;
 	background: #000;
-	background-image: url(./Assets/bg1.png); /* fallback */
-	background-image: url(./Assets/bg1.png),
+	background-image: url(./Assets/back.png); /* fallback */
+	/* background-image: url(./Assets/back.png),
 		linear-gradient(0deg, rgba(19, 19, 19, 0.29), rgba(19, 19, 19, 0.29)),
-		linear-gradient(112.68deg, #180247 0%, #010004 100%);
+		linear-gradient(112.68deg, #180247 0%, #010004 100%); */
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: fill; */
 	display: flex;
 	flex-direction: column;
 }
@@ -58,21 +52,25 @@ body {
 	position: static;
 	width: 100%;
 	/* height: 86px; */
-	font-size: 75px;
+	font-size: 64px;
 	font-family: GilroySemiBold;
+	/* font-weight: 800; */
 	color: white;
 	text-align: center;
 	letter-spacing: 0.75px;
 }
 
+.congratulations span {
+	color: #c50047;
+}
+
 .explorer {
 	position: static;
 	width: 100%;
-	font-size: 75px;
+	font-size: 28px;
 	font-family: GilroySemiBold;
 	font-weight: 600;
-	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-		1px 1px 0 #fff;
+	color: white;
 	text-align: center;
 	letter-spacing: 0.75px;
 	padding-bottom: 3%;
@@ -83,7 +81,7 @@ body {
 	text-align: center;
 	font-family: GilroyMedium;
 	color: white;
-	font-size: 32px;
+	font-size: 24px;
 	letter-spacing: 1.37px;
 }
 
@@ -104,16 +102,17 @@ body {
 	text-align: center;
 	font-family: GilroyMedium;
 	color: white;
-	font-size: 32px;
+	font-size: 28px;
 	letter-spacing: 1.37px;
 }
 
 .check {
 	position: static;
+	padding-top: 5%;
 	text-align: center;
 	font-family: GilroyMedium;
 	color: white;
-	font-size: 32px;
+	font-size: 18px;
 	letter-spacing: 0.75px;
 }
 
@@ -136,9 +135,11 @@ footer {
 		width: 60%;
 		height: auto;
 	}
-	.congratulations,
-	.explorer {
-		font-size: 42px;
+	.congratulations {
+		font-size: 36px;
+	}
+	.explorer{
+		font-size: 18px;
 	}
 	.rewards {
 		font-size: 18px;
@@ -148,12 +149,14 @@ footer {
 		font-size: 26px;
 	}
 
-	.tuned,
-	.check {
+	.tuned {
 		font-size: 18px;
+	}
+	.check{
+		font-size: 16px;
 	}
 
 	footer {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
